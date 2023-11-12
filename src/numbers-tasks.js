@@ -96,9 +96,11 @@ const getLinearEquationRoot = (a, b) => -b / a;
  *   (0,-1) (1,0)    => π/2
  *   (0,1) (0,1)     => 0
  */
-function getAngleBetweenVectors(/* x1, y1, x2, y2 */) {
-  throw new Error('Not implemented');
-}
+const getAngleBetweenVectors = (x1, y1, x2, y2) =>
+  Math.acos(
+    (x1 * x2 + y1 * y2) /
+      (Math.sqrt(x1 ** 2 + y1 ** 2) * Math.sqrt(x2 ** 2 + y2 ** 2))
+  );
 
 /**
  * Returns a last digit of a integer number.
