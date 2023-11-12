@@ -161,9 +161,8 @@ const getParallelepipedDiagonal = (a, b, c) =>
  *   1678, 2  => 1700
  *   1678, 3  => 2000
  */
-function roundToPowerOfTen(/* num, pow */) {
-  throw new Error('Not implemented');
-}
+const roundToPowerOfTen = (num, pow) =>
+  pow ? Math.round(num / 10 ** pow) * 10 ** pow : num;
 
 /**
  * Returns true is the number is prime; otherwise false.
