@@ -303,9 +303,23 @@ const getSumOfDigits = (num) => {
  *   16  => true
  *   15  => false
  */
-function isPowerOfTwo(/* num */) {
-  throw new Error('Not implemented');
-}
+const isPowerOfTwo = (num) => {
+  let res = num;
+
+  while (res >= 2) {
+    res /= 2;
+
+    if (res === 2) {
+      return true;
+    }
+
+    if (!Number.isInteger(res)) {
+      return false;
+    }
+  }
+
+  return false;
+};
 
 /**
  * Returns the sine of a number.
