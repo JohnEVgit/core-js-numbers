@@ -287,9 +287,10 @@ const getSumToN = (n) => {
  *   202 => 4  // (2+0+2)
  *   5   => 5  // 5
  */
-function getSumOfDigits(/* num */) {
-  throw new Error('Not implemented');
-}
+const getSumOfDigits = (num) => {
+  const arr = String(num).split('');
+  return arr.reduce((acc, current) => +acc + +current, 0);
+};
 
 /**
  * Returns true if the given number is a power of two, false otherwise.
