@@ -405,9 +405,9 @@ const toPrecision = (number, precision) => {
  * new Number(5) => 5
  * Number(-5)    => -5
  */
-function getNumberValue(/* number */) {
-  throw new Error('Not implemented');
-}
+const getNumberValue = (number) => {
+  return number.valueOf();
+};
 
 /**
  * Returns a boolean value indicating whether the parameter is a number or not.
