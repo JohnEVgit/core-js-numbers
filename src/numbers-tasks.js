@@ -346,9 +346,9 @@ const getSine = (num) => {
  * 255, 16 => 'ff'
  * 2, 2    => '10'
  */
-function numberToStringInBase(/* number, base */) {
-  throw new Error('Not implemented');
-}
+const numberToStringInBase = (number, base) => {
+  return number.toString(base);
+};
 
 /**
  * Returns a string representation of a number in exponential notation.
