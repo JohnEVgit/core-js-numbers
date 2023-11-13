@@ -237,9 +237,23 @@ const getCube = (num) => {
  *   3  => 2
  *   10 => 55
  */
-function getFibonacciNumber(/* index */) {
-  throw new Error('Not implemented');
-}
+const getFibonacciNumber = (index) => {
+  let res0 = 0;
+  let res1 = 1;
+  let temp;
+
+  if (index <= 1) {
+    return index;
+  }
+
+  for (let i = 2; i <= index; i += 1) {
+    temp = res1;
+    res1 = res0 + res1;
+    res0 = temp;
+  }
+
+  return res1;
+};
 
 /**
  * Returns the sum of all numbers from 1 to n.
