@@ -575,9 +575,9 @@ const getSumOfNumbers = (...args) =>
  * -5, -6 => -5
  * 0, 5   => 5
  */
-function getMaxNumber(/* firstNumber, secondNumber */) {
-  throw new Error('Not implemented');
-}
+const getMaxNumber = (...args) => {
+  return Math.max(...args);
+};
 
 /**
  * Returns a random integer in the range from min to max.
