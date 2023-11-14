@@ -606,9 +606,9 @@ const getRandomInteger = (min, max) => Math.round(max - min) + min;
  * @example:
  * 3, 4 => 5
  */
-function getHypotenuse(/* a, b */) {
-  throw new Error('Not implemented');
-}
+const getHypotenuse = (a, b) => {
+  return Math.hypot(a, b);
+};
 
 /**
  * Returns count of odd numbers from zero to the resulting number.
