@@ -594,9 +594,7 @@ const getMaxNumber = (...args) => {
  * -5, 0 => -5 | -4 | -3 | -2 | -1 | 0
  * -1, 1 => -1 | 0 | 1
  */
-function getRandomInteger(/* min, max */) {
-  throw new Error('Not implemented');
-}
+const getRandomInteger = (min, max) => Math.round(max - min) + min;
 
 /**
  * Returns the length of the hypotenuse of a right triangle.
