@@ -514,9 +514,9 @@ const roundToSmallestInteger = (number) => {
  * 5.1  => 6
  * -5.9 => -5
  */
-function roundToLargestInteger(/* number */) {
-  throw new Error('Not implemented');
-}
+const roundToLargestInteger = (number) => {
+  return Math.ceil(number);
+};
 
 /**
  * Returns the value of a number rounded to the nearest integer.
