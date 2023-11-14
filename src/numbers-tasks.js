@@ -115,7 +115,10 @@ const getAngleBetweenVectors = (x1, y1, x2, y2) =>
  *     5     => 5
  *     0     => 0
  */
-const getLastDigit = (value) => value - Math.floor(value / 10) * 10;
+const getLastDigit = (value) => {
+  return value % 10;
+};
+
 /**
  * Returns a number by given string representation.
  *
